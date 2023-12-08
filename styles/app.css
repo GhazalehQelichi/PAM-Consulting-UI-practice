@@ -97,6 +97,10 @@ a {
 }
 
 /* 
+<<<<<<<<<< Home Page >>>>>>>>>>
+*/
+
+/* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
         Header
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1544,4 +1548,106 @@ a {
 .footer__text,
 .footer__line {
   color: #fff;
+}
+
+/* 
+<<<<<<<<<< About-Us Page >>>>>>>>>>
+*/
+
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Header
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+
+.about-header {
+  background-image: url("../images/headers/introdunction-header-min.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0;
+  width: 100%;
+  height: 60rem;
+}
+.about-overlay {
+  background: linear-gradient(
+    90deg,
+    #ffffff 62.06%,
+    rgba(255, 255, 255, 0.77) 78.73%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-header__title {
+  font-family: var(--Avenir-SB);
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #434364;
+}
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Brief
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+
+.about-brief {
+  background: rgba(109, 49, 208, 1);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.about-brief__wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+.about-brief__text {
+  color: #fff;
+  font-family: var(--montserrat);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.about-brief__text:first-child {
+  margin-bottom: 3rem;
+}
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+
+.about-service-explain {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+.service-explain {
+  display: flex;
+}
+.service-explain-content {
+  width: 53%;
+  color: #434364;
+}
+.service-explain__title {
+  font-family: var(--Avenir-SB);
+  font-weight: 600;
+  font-size: 3rem;
+}
+.service-explain__text {
+  line-height: 2;
+}
+.service-explain__text:nth-child(2) {
+  margin-bottom: 3rem;
+}
+.service-explain__image {
+  background-image: url("../images/sub-offer/chess-board-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  left: auto;
+  top: 5rem;
 }

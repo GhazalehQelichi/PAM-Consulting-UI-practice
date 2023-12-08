@@ -22,6 +22,14 @@
   .brief__image {
     height: 48rem;
   }
+  /*
+  ^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Header
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+  .about-overlay {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 1200px) {
   /* 
@@ -88,6 +96,18 @@
 
   .swiper-questions {
     height: 80rem;
+  }
+  /*
+  ^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Header
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+  .about-overlay,
+  .about-header {
+    height: 55rem;
+  }
+  .about-header {
+    background-size: cover;
   }
 }
 @media screen and (max-width: 992px) {
@@ -324,6 +344,43 @@
   .intro-profile {
     width: 80%;
   }
+  /*
+  ^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Header
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+  .about-overlay {
+    height: 15rem;
+    background: linear-gradient(
+      180deg,
+      #ffffff 62.06%,
+      rgba(255, 255, 255, 0.77) 78.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .about-header {
+    height: 60rem;
+  }
+  .about-brief__wrapper {
+    width: 100%;
+  }
+  /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.about-service-explain {
+  height: 90rem;
+}
+.service-explain-content {
+  width: 100%;
+}
+.service-explain__image {
+  bottom: 0;
+  top: 55%;
+  left: 0;
+  width: 100%;
+}
 }
 @media screen and (max-width: 768px) {
   /* 
@@ -470,6 +527,26 @@
   .swiper-questions {
     height: 65rem;
   }
+  /*
+  ^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Header
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+  .about-overlay {
+    height: 15rem;
+  }
+  .about-header {
+    background-position: center;
+  }
+    /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.about-service-explain {
+  height: 100rem;
+}
+
 }
 @media screen and (max-width: 576px) {
   .offer {
@@ -542,6 +619,15 @@
     -ms-flex-align: center;
     align-items: center;
   }
+        /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.service-explain__image {
+  top: 60%;
+}
+
 }
 @media screen and (max-width: 470px) {
   /* 
@@ -602,6 +688,14 @@
   .form {
     width: 100%;
   }
+          /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.service-explain__image {
+  top: 75%;
+}
 }
 @media screen and (max-width: 420px) {
   /* 
@@ -745,6 +839,16 @@
   .swiper-questions {
     height: 90rem;
   }
+          /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.service-explain__image {
+  top: 86rem;
+}
+
+
 }
 @media screen and (max-width: 300px) {
   .nav-list {
@@ -765,6 +869,17 @@
   .contact-info__email-address {
     font-size: 1.3rem;
   }
+          /* 
+^^^^^^^^^^^^^^^^^^^^^^^^
+--About-Service
+^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+.service-explain__image {
+  top: 105rem;
+}
+.about-service-explain {
+  height: 120rem;
+}
 }
 
 /* 
