@@ -35,7 +35,8 @@
 <<< Family-Relocation Page >>>
 */
 
-  .family-overlay {
+  .family-overlay,
+  .business-overlay {
     width: 75%;
   }
   .content {
@@ -150,6 +151,10 @@
   }
   .content__image {
     width: 100%;
+  }
+  .first-content__list-span {
+    display: block;
+    color:#6D31D0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -426,19 +431,19 @@
   /* 
 <<< Family-Relocation Page >>>
 */
-  .family-header__title {
-    width: auto;
-    text-align: center;
-    margin-left: 0;
-  }
   .sub-overlay {
     justify-content: center;
   }
-  .family-header {
+  .family-header,
+  .business-header {
     background-size: cover;
   }
-  .family-header__title {
+  .family-header__title,
+  .business-header__title {
     margin-top: -4rem;
+    width: auto;
+    text-align: center;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 768px) {
