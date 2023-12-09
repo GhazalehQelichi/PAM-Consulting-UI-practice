@@ -50,6 +50,16 @@
   .content__image {
     width: 40%;
   }
+  .migration-header__title{
+    line-height: 1.5;
+    margin-left: 15rem;  
+  }
+  .migration-overlay {
+    width: 45%;
+  }
+  .migration-header__title {
+    margin-left: -5rem;
+}
 }
 @media screen and (max-width: 1200px) {
   /* 
@@ -157,6 +167,9 @@
     display: block;
     color: #6d31d0;
   }
+  .migration-header__title {
+    margin-left: 5rem;
+}
 }
 @media screen and (max-width: 992px) {
   /* 
@@ -435,14 +448,13 @@
   .sub-overlay {
     justify-content: center;
   }
-  .family-header,
-  .business-header,
-  .invest-header {
+  .sub-header {
     background-size: cover;
   }
-  .family-header__title,
-  .business-header__title,
-  .invest-header__title {
+  .migration-header{
+    background-position: left 0;
+  }
+  .sub-header__title {
     margin-top: -4rem;
     width: auto;
     text-align: center;
@@ -602,7 +614,9 @@
   .sub-overlay {
     height: 15rem;
   }
-  .sub-header {
+  .family-header,
+  .business-header,
+  .invest-header {
     background-position: center;
   }
   /* 
@@ -613,6 +627,11 @@
   .about-service-explain {
     height: 100rem;
   }
+  .migration-process__text,
+  .migration-process__explain{
+    width: 100%;
+  }
+
 }
 @media screen and (max-width: 576px) {
   .offer {
