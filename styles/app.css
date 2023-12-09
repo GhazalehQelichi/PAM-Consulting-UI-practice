@@ -87,7 +87,7 @@ body {
   );
 }
 .bg-pure-purple {
-  background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+  background: linear-gradient(180deg, #828cde -21.43%, #6d31d0 201.93%);
 }
 
 /* 
@@ -190,8 +190,7 @@ a {
 .active-link .nav-list__link::after {
   width: 100%;
 }
-.nav-list__item:hover .nav-list__link::after
-.service-menu__link:hover::after {
+.nav-list__item:hover .nav-list__link::after .service-menu__link:hover::after {
   width: 100%;
 }
 .nav-list__dropdown {
@@ -1557,19 +1556,19 @@ a {
 .footer__link {
   position: relative;
 }
-.footer__link::before{
-  -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  content: '';
+.footer__link::before {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   background-color: #fff;
-  height: .2rem;
+  height: 0.2rem;
 }
-.footer__link:hover::before{
+.footer__link:hover::before {
   width: 100%;
 }
 /* 
@@ -1686,16 +1685,17 @@ a {
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 */
 
-.family-header{
+.family-header {
   background-image: url("../images/headers/family-header-min.jpg");
 }
 .family-overlay,
-.business-overlay {
+.business-overlay,
+.invest-overlay {
   width: 80%;
   justify-content: flex-start;
 }
-.family-header__title{
-    width: 35rem;
+.family-header__title {
+  width: 35rem;
   line-height: 1.5;
   margin-left: 15rem;
 }
@@ -1705,67 +1705,66 @@ a {
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 */
 
-.row-content-wrapper{
+.row-content-wrapper {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.content-row{
+.content-row {
   display: flex;
 }
 .first-family-content,
-.third-family-content{
+.third-family-content {
   margin-right: 5rem;
 }
-.content{
+.content {
   color: #434364;
   line-height: 2;
   width: 48%;
 }
-.content__title{
+.content__title {
   font-family: var(--Avenir-SB);
   font-weight: 600;
   font-size: 3.6rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
-.first-content__list-title{
+.first-content__list-title {
   margin-top: 2rem;
 }
-.sub-page-list{
+.sub-page-list {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.sub-page-list__item{
+.sub-page-list__item {
   margin-left: 2rem;
   position: relative;
 }
 .sub-page-list__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 1rem;
   left: -1.7rem;
-  width: .7rem;
-  height: .7rem;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
   background-color: #434364;
 }
-.content__image{
+.content__image {
   width: 50%;
-  padding-top: 5rem; 
+  padding-top: 5rem;
 }
-.content__img{
+.content__img {
   display: block;
   width: 100%;
   height: 80%;
   object-fit: fill;
 }
-.second-content{
+.second-content {
   margin-left: 5rem;
   width: 50%;
 }
 
-.family-process .row,
-.business-process .row{
+.sub-page-process .row {
   justify-content: center;
 }
 /* 
@@ -1776,10 +1775,11 @@ a {
 --Header
 ^^^^^^^^^
 */
-.business-header{
+.business-header {
   background-image: url("../images/headers/business-min.jpg");
 }
-.business-header__title {
+.business-header__title,
+.invest-header__title {
   line-height: 1.5;
   margin-left: 15rem;
 }
@@ -1788,13 +1788,29 @@ a {
 .third-business-content-row {
   flex-direction: row-reverse;
 }
-.business-content__img{
+.business-content__img,
+.invest-content__img {
   object-fit: cover;
 }
 .first-business-content,
-.third-business-content{
+.third-business-content,
+.first-invest-content,
+.third-invest-content {
   margin-left: 5rem;
 }
-.second-business-content{
+.second-business-content,
+.second-invest-content   {
   margin-right: 5rem;
+}
+/* 
+<<<<<<<<<< Investment Page >>>>>>>>>>
+*/
+
+.invest-header {
+  background-image: url("../images/headers/investment-header-min.jpg");
+}
+.first-invest-content-row,
+.second-invest-content-row,
+.third-invest-content-row {
+  flex-direction: row-reverse;
 }

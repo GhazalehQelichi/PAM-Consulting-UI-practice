@@ -36,7 +36,8 @@
 */
 
   .family-overlay,
-  .business-overlay {
+  .business-overlay,
+  .invest-overlay {
     width: 75%;
   }
   .content {
@@ -154,7 +155,7 @@
   }
   .first-content__list-span {
     display: block;
-    color:#6D31D0;
+    color: #6d31d0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -435,11 +436,13 @@
     justify-content: center;
   }
   .family-header,
-  .business-header {
+  .business-header,
+  .invest-header {
     background-size: cover;
   }
   .family-header__title,
-  .business-header__title {
+  .business-header__title,
+  .invest-header__title {
     margin-top: -4rem;
     width: auto;
     text-align: center;
@@ -690,7 +693,7 @@
   .service-explain__image {
     top: 60%;
   }
-  .content__title{
+  .content__title {
     text-align: center;
   }
   .sub-overlay {
@@ -925,7 +928,7 @@
   .service-explain__image {
     top: 86rem;
   }
-  .sub-overlay{
+  .sub-overlay {
     height: 25rem;
   }
 }
