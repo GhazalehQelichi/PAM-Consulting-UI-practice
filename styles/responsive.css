@@ -27,8 +27,26 @@
 --About-Header
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-  .about-overlay {
+  .sub-overlay {
     width: 30%;
+  }
+
+  /* 
+<<< Family-Relocation Page >>>
+*/
+
+  .family-overlay {
+    width: 75%;
+  }
+  .content {
+    width: 65%;
+  }
+  .content__img {
+    height: 60%;
+    object-fit: cover;
+  }
+  .content__image {
+    width: 40%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -102,12 +120,36 @@
 --About-Header
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-  .about-overlay,
-  .about-header {
+  .sub-header,
+  .sub-overlay {
     height: 55rem;
   }
-  .about-header {
+  .about__header {
     background-size: cover;
+  }
+  /* 
+<<< Family-Relocation Page >>>
+*/
+
+  .family-overlay {
+    width: 65%;
+  }
+  .content-row {
+    flex-direction: column;
+  }
+  .second-content-row {
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content__img {
+    height: auto;
+  }
+  .content__image {
+    width: 100%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -349,7 +391,7 @@
 --About-Header
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-  .about-overlay {
+  .sub-overlay {
     height: 15rem;
     background: linear-gradient(
       180deg,
@@ -358,7 +400,7 @@
       rgba(255, 255, 255, 0) 100%
     );
   }
-  .about-header {
+  .sub-header {
     height: 60rem;
   }
   .about-brief__wrapper {
@@ -369,18 +411,35 @@
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.about-service-explain {
-  height: 90rem;
-}
-.service-explain-content {
-  width: 100%;
-}
-.service-explain__image {
-  bottom: 0;
-  top: 55%;
-  left: 0;
-  width: 100%;
-}
+  .about-service-explain {
+    height: 90rem;
+  }
+  .service-explain-content {
+    width: 100%;
+  }
+  .service-explain__image {
+    bottom: 0;
+    top: 55%;
+    left: 0;
+    width: 100%;
+  }
+  /* 
+<<< Family-Relocation Page >>>
+*/
+  .family-header__title {
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+  }
+  .sub-overlay {
+    justify-content: center;
+  }
+  .family-header {
+    background-size: cover;
+  }
+  .family-header__title {
+    margin-top: -4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   /* 
@@ -532,21 +591,20 @@
 --About-Header
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-  .about-overlay {
+  .sub-overlay {
     height: 15rem;
   }
-  .about-header {
+  .sub-header {
     background-position: center;
   }
-    /* 
+  /* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.about-service-explain {
-  height: 100rem;
-}
-
+  .about-service-explain {
+    height: 100rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .offer {
@@ -619,15 +677,20 @@
     -ms-flex-align: center;
     align-items: center;
   }
-        /* 
+  /* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.service-explain__image {
-  top: 60%;
-}
-
+  .service-explain__image {
+    top: 60%;
+  }
+  .content__title{
+    text-align: center;
+  }
+  .sub-overlay {
+    padding: 0 1rem;
+  }
 }
 @media screen and (max-width: 470px) {
   /* 
@@ -688,14 +751,24 @@
   .form {
     width: 100%;
   }
-          /* 
+  /* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.service-explain__image {
-  top: 75%;
-}
+  .service-explain__image {
+    top: 75%;
+  }
+  /* 
+<<< Family-Relocation Page >>>
+*/
+
+  .family-header__title {
+    margin-top: -5rem;
+  }
+  .family-overlay {
+    height: 20rem;
+  }
 }
 @media screen and (max-width: 420px) {
   /* 
@@ -839,16 +912,17 @@
   .swiper-questions {
     height: 90rem;
   }
-          /* 
+  /* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.service-explain__image {
-  top: 86rem;
-}
-
-
+  .service-explain__image {
+    top: 86rem;
+  }
+  .sub-overlay{
+    height: 25rem;
+  }
 }
 @media screen and (max-width: 300px) {
   .nav-list {
@@ -869,17 +943,17 @@
   .contact-info__email-address {
     font-size: 1.3rem;
   }
-          /* 
+  /* 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 --About-Service
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
-.service-explain__image {
-  top: 105rem;
-}
-.about-service-explain {
-  height: 120rem;
-}
+  .service-explain__image {
+    top: 105rem;
+  }
+  .about-service-explain {
+    height: 120rem;
+  }
 }
 
 /* 

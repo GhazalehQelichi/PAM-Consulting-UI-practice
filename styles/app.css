@@ -14,6 +14,7 @@ body {
   line-height: 2.4;
   font-family: var(--Avenir-R);
   position: relative;
+  overflow-x: hidden;
 }
 
 /* 
@@ -84,6 +85,9 @@ body {
     rgba(255, 185, 175, 0.3) -3.89%,
     #a651fb 94.34%
   );
+}
+.bg-pure-purple {
+  background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
 }
 
 /* 
@@ -1560,15 +1564,17 @@ a {
 ^^^^^^^^^^^^^^^^^^^^^^^^
 */
 
-.about-header {
-  background-image: url("../images/headers/introdunction-header-min.jpg");
+.sub-header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 0;
   width: 100%;
   height: 60rem;
 }
-.about-overlay {
+.about-header {
+  background-image: url("../images/headers/introdunction-header-min.jpg");
+}
+.sub-overlay {
   background: linear-gradient(
     90deg,
     #ffffff 62.06%,
@@ -1580,10 +1586,10 @@ a {
   justify-content: center;
   align-items: center;
 }
-.about-header__title {
+.sub-header__title {
   font-family: var(--Avenir-SB);
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: #434364;
 }
 /* 
@@ -1650,4 +1656,95 @@ a {
   right: 0;
   left: auto;
   top: 5rem;
+}
+
+/* 
+<<<<<<<<<< Family-Relocation Page >>>>>>>>>>
+*/
+
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--Family-Relocation Header
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+
+.family-header{
+  background-image: url("../images/headers/family-header-min.jpg");
+}
+.family-overlay {
+  width: 80%;
+  justify-content: flex-start;
+}
+.family-header__title {
+  width: 35rem;
+  line-height: 1.5;
+  margin-left: 15rem;
+}
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--Family-Relocation Main
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*/
+
+.row-content-wrapper{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.content-row{
+  display: flex;
+}
+.first-content,
+.third-content{
+  margin-right: 5rem;
+}
+.content{
+  color: #434364;
+  line-height: 2;
+  width: 48%;
+}
+.content__title{
+  font-family: var(--Avenir-SB);
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.first-content__list-title{
+  margin-top: 2rem;
+}
+.sub-page-list{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sub-page-list__item{
+  margin-left: 2rem;
+  position: relative;
+}
+.sub-page-list__item::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: -1.7rem;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background-color: #434364;
+}
+.content__image{
+  width: 50%;
+  padding-top: 5rem; 
+}
+.content__img{
+  display: block;
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+}
+.second-content{
+  margin-left: 5rem;
+  width: 50%;
+}
+
+.family-process .row{
+  justify-content: center;
 }
