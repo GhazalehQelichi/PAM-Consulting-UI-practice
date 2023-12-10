@@ -71,3 +71,16 @@ const cityNameSpan = document.querySelectorAll(".city-span");
 cityNameSpan.forEach((cityName) => {
   showCityDescription(cityName, "city-visible", cityName.dataset.contentClass);
 });
+
+// Scroll To Section
+const pageLinks = document.querySelectorAll(".samePageScroll");
+pageLinks.forEach(pageLink => {
+  pageLink.addEventListener("click", function (e){
+    e.preventDefault()
+    let sectionId = pageLink.dataset.id;
+    let sectionOffset = document.querySelector(`#${sectionId}`).offsetTop;
+    window.scrollTo({
+      top: sectionOffset + 50
+    })
+  })
+})
