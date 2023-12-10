@@ -1,7 +1,7 @@
 const mobileMenuBtn = document.querySelector(".nav-hamburger"),
   mobileMenu = document.querySelector(".nav-list"),
   mobileLogo = document.querySelector(".nav-mobile-logo"),
-  navListItems = document.querySelectorAll(".nav-list__item");
+  navListItems = document.querySelectorAll(".nav-list__link");
 
 // Managing DropDown Menu:
 document.addEventListener("click", (e) => {
@@ -49,8 +49,7 @@ navListItems.forEach((navListItem) => {
   });
 });
 
-// Click On Svg And Span To Show City Description,
-// One Main Function \ Two Loops(1.SVG Path, 2.Span):
+// Svg And Span OnClick Event To Show City Description,
 function showCityDescription(city, citySelectClass, dataType) {
   city.addEventListener("click", () => {
     document
@@ -72,5 +71,3 @@ const cityNameSpan = document.querySelectorAll(".city-span");
 cityNameSpan.forEach((cityName) => {
   showCityDescription(cityName, "city-visible", cityName.dataset.contentClass);
 });
-
-

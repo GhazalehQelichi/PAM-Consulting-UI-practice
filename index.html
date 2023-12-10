@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAM Consulting</title>
-    <link rel="icon" href="./images/logo-min.png">
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="icon" href="./images/logo-min.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -18,7 +16,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./styles/app.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
     <header class="header">
@@ -35,14 +32,16 @@
             />
           </div>
           <ul class="nav-list">
-            <li class="nav-list__item active-link">
-              <a class="nav-list__link" href="#">Home</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link active-link" href="#">Home</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="./about.html">About us</a>
             </li>
-            <li class="nav-list__item" data-dropdown>
-              <a class="nav-list__link" data-dropdown-menu href="#">Services</a>
+            <li class="nav-list__item dropdown" data-dropdown>
+              <a class="nav-list__link" data-dropdown-menu href="#servicePart"
+                >Services</a
+              >
               <svg
                 class="nav-list__dropdown"
                 data-dropdown-menu
@@ -55,26 +54,43 @@
               </svg>
               <ul class="service-menu">
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link"
+                  <a
+                    href="./investment.html"
+                    class="service-menu__link nav-list__link"
                     >Investments opportunities</a
                   >
                 </li>
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link">Business relocation</a>
+                  <a
+                    href="./business.html"
+                    class="service-menu__link nav-list__link"
+                    >Business relocation</a
+                  >
                 </li>
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link">Family relocation</a>
+                  <a
+                    href="./family.html"
+                    class="service-menu__link nav-list__link"
+                    >Family relocation</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Invest in cyprus</a>
+              <a class="nav-list__link" href="./investment.html"
+                >Invest in cyprus</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">migration</a>
+              <a class="nav-list__link" href="./migration.html">migration</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Contuct us</a>
+              <a
+                class="nav-list__link"
+                href="#contact"
+                style="scroll-behavior: smooth"
+                >Contuct us</a
+              >
             </li>
           </ul>
           <a href="#" class="nav__button btn">Get in touch</a>
@@ -117,7 +133,7 @@
                       and the stability of being in the EU offers entrepreneurs
                       the abilities they need to thrive.
                     </p>
-                    <a href="#" class="offer__link btn offer-1__link"
+                    <a href="#servicePart" class="offer__link btn offer-1__link"
                       >Find Out More</a
                     >
                   </div>
@@ -192,7 +208,9 @@
                     Cyprus. With a confident and stable economic outlook, it is
                     a great time to consider investing in Cyprus property.
                   </p>
-                  <a href="#" class="offer__link btn offer-2__link"
+                  <a
+                    href="./investment.html"
+                    class="offer__link btn offer-2__link"
                     >Find Out More</a
                   >
                 </div>
@@ -218,7 +236,7 @@
                     healthy lifestyle and family-friendly communities have much
                     to offer to every member of your family.
                   </p>
-                  <a href="#" class="offer__link btn offer-3__link"
+                  <a href="./family.html" class="offer__link btn offer-3__link"
                     >Find Out More</a
                   >
                 </div>
@@ -247,7 +265,9 @@
                     Cyprus into a country with endless business opportunities
                     for everyone.
                   </p>
-                  <a href="#" class="offer__link btn offer-4__link"
+                  <a
+                    href="./business.html"
+                    class="offer__link btn offer-4__link"
                     >Find Out More</a
                   >
                 </div>
@@ -301,7 +321,9 @@
                     perfect place to call home. The island is now one of the
                     most dominant destinations with huge expat communities.
                   </p>
-                  <a href="#" class="offer__link btn offer-6__link"
+                  <a
+                    href="./migration.html"
+                    class="offer__link btn offer-6__link"
                     >Find Out More</a
                   >
                 </div>
@@ -313,7 +335,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section id="servicePart" class="services">
         <div class="container">
           <div class="services-content">
             <div class="services-content__text">
@@ -334,7 +356,7 @@
                       you and your family can feel safe and confident.
                     </p>
                     <div class="service-content__links">
-                      <a href="#" class="btn service-content__link"
+                      <a href="./family.html" class="btn service-content__link"
                         >Find Out More</a
                       >
                     </div>
@@ -355,7 +377,9 @@
                       Cyprus, so you can focus on your business goals.
                     </p>
                     <div class="service-content__links">
-                      <a href="#" class="btn service-content__link"
+                      <a
+                        href="./business.html"
+                        class="btn service-content__link"
                         >Find Out More</a
                       >
                     </div>
@@ -376,7 +400,9 @@
                       ambitions, by choosing the optimal investment plan.
                     </p>
                     <div class="service-content__links">
-                      <a href="#" class="btn service-content__link"
+                      <a
+                        href="./investment.html"
+                        class="btn service-content__link"
                         >Find Out More</a
                       >
                     </div>
@@ -410,7 +436,9 @@
                 crime rate, stunning sandy beaches, and awe-inspiring mountain
                 views, Cyprus is the place to be!
               </p>
-              <a href="#" class="btn brief-content__link">Find Out More</a>
+              <a href="./migration.html" class="btn brief-content__link"
+                >Find Out More</a
+              >
             </div>
             <div class="brief__image"></div>
           </div>
@@ -728,7 +756,9 @@
                 why we prioritize our clients’ needs by making sure that the
                 whole relocation process is as smooth and simple as possible.
               </p>
-              <a href="#" class="intro-content__link btn">More about us</a>
+              <a href="./about.html" class="intro-content__link btn"
+                >More about us</a
+              >
             </div>
             <div class="intro-profile">
               <div class="intro-profile__image">
@@ -774,7 +804,7 @@
               <div class="process-item">
                 <div class="process-item__image bg-gradient-orange">
                   <img
-                    src="./images/png/target-min.png"
+                    src="./images/png/Storefront-min.png"
                     class="process-item__png"
                   />
                 </div>
@@ -822,7 +852,7 @@
         </div>
       </section>
 
-      <section class="contact-us">
+      <section id="contact" class="contact-us">
         <div class="container">
           <div class="contact">
             <div class="contact-text">

@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us|PAM Consulting</title>
-    <link rel="icon" href="./images/logo-min.png">
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="icon" href="./images/logo-min.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/grid.css" />
     <link rel="stylesheet" href="./styles/app.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
   </head>
   <body>
     <header class="header">
@@ -30,13 +27,13 @@
             />
           </div>
           <ul class="nav-list">
-            <li class="nav-list__item active-link">
-              <a class="nav-list__link" href="#">Home</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./index.html">Home</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">About us</a>
+              <a class="nav-list__link active-link" href="#">About us</a>
             </li>
-            <li class="nav-list__item" data-dropdown>
+            <li class="nav-list__item dropdown" data-dropdown>
               <a class="nav-list__link" data-dropdown-menu href="#">Services</a>
               <svg
                 class="nav-list__dropdown"
@@ -50,26 +47,43 @@
               </svg>
               <ul class="service-menu">
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link"
+                  <a
+                    href="./investment.html"
+                    class="service-menu__link nav-list__link"
                     >Investments opportunities</a
                   >
                 </li>
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link">Business relocation</a>
+                  <a
+                    href="./business.html"
+                    class="service-menu__link nav-list__link"
+                    >Business relocation</a
+                  >
                 </li>
                 <li class="service-menu__item">
-                  <a href="#" class="service-menu__link">Family relocation</a>
+                  <a
+                    href="./family.html"
+                    class="service-menu__link nav-list__link"
+                    >Family relocation</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Invest in cyprus</a>
+              <a class="nav-list__link" href="./investment.html"
+                >Invest in cyprus</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">migration</a>
+              <a class="nav-list__link" href="./migration.html">migration</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Contuct us</a>
+              <a
+                class="nav-list__link"
+                href="#contact"
+                style="scroll-behavior: smooth"
+                >Contuct us</a
+              >
             </li>
           </ul>
           <a href="#" class="nav__button btn">Get in touch</a>
@@ -147,9 +161,12 @@
                     class="process-item__png"
                   />
                 </div>
-                <h4 class="process-item__title">Time Efficiency </h4>
+                <h4 class="process-item__title">Time Efficiency</h4>
                 <p class="process-item__caption">
-                    As our team works efficiently and strategically, the whole relocation process is completed in a short amount of time so you can have more time to focus on setting up your life in Cyprus.
+                  As our team works efficiently and strategically, the whole
+                  relocation process is completed in a short amount of time so
+                  you can have more time to focus on setting up your life in
+                  Cyprus.
                 </p>
               </div>
             </div>
@@ -161,9 +178,12 @@
                     class="process-item__png"
                   />
                 </div>
-                <h4 class="process-item__title">Gratifying Experience </h4>
+                <h4 class="process-item__title">Gratifying Experience</h4>
                 <p class="process-item__caption">
-                    Moving can be intimidating and demanding experience for anyone. Our team makes sure to come up with the best relocation strategy, offering you a piece of mind and a sense of security.
+                  Moving can be intimidating and demanding experience for
+                  anyone. Our team makes sure to come up with the best
+                  relocation strategy, offering you a piece of mind and a sense
+                  of security.
                 </p>
               </div>
             </div>
@@ -175,9 +195,11 @@
                     class="process-item__png"
                   />
                 </div>
-                <h4 class="process-item__title">Safety & Reliability </h4>
+                <h4 class="process-item__title">Safety & Reliability</h4>
                 <p class="process-item__caption">
-                    Once you are settled, we make sure that everything is according to your expectations and your vision of the quality of our services.
+                  Once you are settled, we make sure that everything is
+                  according to your expectations and your vision of the quality
+                  of our services.
                 </p>
               </div>
             </div>
@@ -191,7 +213,8 @@
                 </div>
                 <h4 class="process-item__title">Personalized Support</h4>
                 <p class="process-item__caption">
-                    Our services include providing you with any information you may need about living in Cyprus with your family.
+                  Our services include providing you with any information you
+                  may need about living in Cyprus with your family.
                 </p>
               </div>
             </div>
@@ -199,7 +222,7 @@
         </div>
       </section>
 
-      <section class="contact-us">
+      <section id="contact" class="contact-us">
         <div class="container">
           <div class="contact">
             <div class="contact-text">
@@ -303,7 +326,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
